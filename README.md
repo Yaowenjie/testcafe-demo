@@ -6,6 +6,7 @@ You can setup your own local `TestRail` server with docker, please refer to this
 First, please change .env parameters according to your setting up, then
 ```
 source .env
+npm install
 npm run test
 
 ```
