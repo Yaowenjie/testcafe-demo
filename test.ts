@@ -5,7 +5,7 @@ fixture `Getting Started`// declare the fixture
 
 
 //then create a test and place your code there
-test('section1 | This is success testing example | C2', async t => {
+test('section1 | This is success testing example | C1', async t => {
     await t
         .typeText('#developer-name', 'John Smith')
         .click('#submit-button')
@@ -13,8 +13,8 @@ test('section1 | This is success testing example | C2', async t => {
         // Use the assertion to check if the actual header text is equal to the expected one
         .expect(Selector('#article-header').innerText).eql('Thank you, John Smith!');
 });
-
-test('section1 | This is failing testing example | C3', async t => {
+//
+test('section1 | This is failing testing example | C2', async t => {
     await t
     .typeText('#developer-name', 'John Smith')
     .click('#submit-button')

@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "testcafe chrome test.ts --reporter html-testrail",
-    "test-headless": "testcafe \"chrome:headless\" test.ts --reporter html-testrail"
+    "test-headless": "testcafe chrome:headless test.ts --reporter html-testrail"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "testcafe": "^1.2.1",
-    "testcafe-reporter-html-testrail": "^3.1.2"
+    "testcafe-reporter-html-testrail": "^2.0.8"
   }
 }
