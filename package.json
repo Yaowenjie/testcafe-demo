@@ -9,14 +9,13 @@
     "test-h": "testcafe chrome:headless test.spec.ts --reporter html-testrail",
     "test-s": "testcafe chrome:headless test.spec.ts -S -s artifacts/screenshots",
     "test-v": "testcafe chrome:headless test.spec.ts --video artifacts/videos",
-    "test-fm": "testcafe chrome:headless *.spec.ts --fixture-meta smoke=true",
-    "test-tm": "testcafe chrome:headless *.spec.ts --test-meta env=prod"
+    "test-fm": "testcafe chrome:headless *.spec.ts --fixture-meta smoke=true --reporter html-testrail",
+    "test-tm": "testcafe chrome:headless *.spec.ts --test-meta env=prod --reporter html-testrail"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "testcafe": "^1.2.1",
-    "testcafe-reporter-html-testrail": "^2.0.8",
-    "config.json": "latest"
+    "testcafe-reporter-html-testrail": "^2.0.8"
   }
 }
