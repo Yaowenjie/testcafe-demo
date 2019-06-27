@@ -6,7 +6,8 @@
   "scripts": {
     "test": "testcafe chrome test.ts --reporter html-testrail",
     "test-headless": "testcafe chrome:headless test.ts --reporter html-testrail",
-    "test-s": "testcafe chrome:headless test.ts -S -s artifacts/screenshots"
+    "test-s": "testcafe chrome:headless test.ts -S -s artifacts/screenshots",
+    "test-v": "testcafe chrome:headless test.ts --video artifacts/videos"
   },
   "author": "",
   "license": "ISC",
