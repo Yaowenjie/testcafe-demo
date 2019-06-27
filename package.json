@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome test.ts",
-    "test-r": "testcafe chrome test.ts --reporter html-testrail",
-    "test-h": "testcafe chrome:headless test.ts --reporter html-testrail",
-    "test-s": "testcafe chrome:headless test.ts -S -s artifacts/screenshots",
-    "test-v": "testcafe chrome:headless test.ts --video artifacts/videos"
+    "test": "testcafe chrome test.spec.ts",
+    "test-r": "testcafe chrome test.spec.ts --reporter html-testrail",
+    "test-h": "testcafe chrome:headless test.spec.ts --reporter html-testrail",
+    "test-s": "testcafe chrome:headless test.spec.ts -S -s artifacts/screenshots",
+    "test-v": "testcafe chrome:headless test.spec.ts --video artifacts/videos",
+    "test-fm": "testcafe chrome:headless *.spec.ts --fixture-meta smoke=true",
+    "test-tm": "testcafe chrome:headless *.spec.ts --test-meta env=prod"
   },
   "author": "",
   "license": "ISC",
