@@ -1,7 +1,9 @@
 import { Selector } from 'testcafe';
+import config from './config';
 
-fixture `Getting Started`
-    .page `https://devexpress.github.io/testcafe/example`;
+
+fixture(`Getting Started`)
+    .page(`${config.baseUrl}/testcafe/example`);
 
 
 test('section1 | This is success testing example | C5', async t => {

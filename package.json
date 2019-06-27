@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome test.ts --reporter html-testrail",
-    "test-headless": "testcafe chrome:headless test.ts --reporter html-testrail",
+    "test": "testcafe chrome test.ts",
+    "test-r": "testcafe chrome test.ts --reporter html-testrail",
+    "test-h": "testcafe chrome:headless test.ts --reporter html-testrail",
     "test-s": "testcafe chrome:headless test.ts -S -s artifacts/screenshots",
     "test-v": "testcafe chrome:headless test.ts --video artifacts/videos"
   },
@@ -13,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "testcafe": "^1.2.1",
-    "testcafe-reporter-html-testrail": "^2.0.8"
+    "testcafe-reporter-html-testrail": "^2.0.8",
+    "config.json": "latest"
   }
 }
