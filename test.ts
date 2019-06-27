@@ -1,25 +1,22 @@
-import { Selector } from 'testcafe'; // first import testcafe selectors
+import { Selector } from 'testcafe';
 
-fixture `Getting Started`// declare the fixture
-    .page `https://devexpress.github.io/testcafe/example`;  // specify the start page
+fixture `Getting Started`
+    .page `https://devexpress.github.io/testcafe/example`;
 
 
-//then create a test and place your code there
-test('section1 | This is success testing example | C1', async t => {
+test('section1 | This is success testing example | C5', async t => {
     await t
         .typeText('#developer-name', 'John Smith')
         .click('#submit-button')
 
-        // Use the assertion to check if the actual header text is equal to the expected one
         .expect(Selector('#article-header').innerText).eql('Thank you, John Smith!');
 });
-//
-test('section1 | This is failing testing example | C2', async t => {
+
+test('section1 | This is failing testing example | C6', async t => {
     await t
     .typeText('#developer-name', 'John Smith')
     .click('#submit-button')
 
-    // Use the assertion to check if the actual header text is equal to the expected one
     .expect(Selector('#article-header').innerText).eql('Thank you, WJ!');
 });
 
