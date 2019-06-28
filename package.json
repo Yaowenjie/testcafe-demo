@@ -1,8 +1,7 @@
 {
-  "name": "testcafe-demo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "gauge-ts-template",
+  "version": "0.0.1",
+  "description": "Starter template for writing TypeScript tests for Gauge",
   "scripts": {
     "test": "testcafe chrome test.spec.ts",
     "test-r": "testcafe chrome test.spec.ts --reporter html-testrail",
@@ -10,12 +9,18 @@
     "test-s": "testcafe chrome:headless test.spec.ts -S -s artifacts/screenshots",
     "test-v": "testcafe chrome:headless test.spec.ts --video artifacts/videos",
     "test-fm": "testcafe chrome:headless *.spec.ts --fixture-meta smoke=true --reporter html-testrail",
-    "test-tm": "testcafe chrome:headless *.spec.ts --test-meta env=prod --reporter html-testrail"
+    "test-tm": "testcafe chrome:headless *.spec.ts --test-meta env=prod --reporter html-testrail",
+    "gauge": "gauge run specs"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gauge-ts": "latest",
     "testcafe": "^1.2.1",
-    "testcafe-reporter-html-testrail": "^2.0.8"
+    "ts-node": "latest",
+    "typescript": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest"
   }
 }
