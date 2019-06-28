@@ -47,3 +47,8 @@ npm run test-fm
 ```
 npm run test-tm
 ```
+
+7. Run with `gauge` example:
+```
+npm run gauge
+```
