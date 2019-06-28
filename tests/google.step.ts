@@ -1,7 +1,7 @@
-import {BeforeScenario, BeforeStep, Step} from 'gauge-ts';
+import { Selector } from 'testcafe';
+import {BeforeScenario, Step} from 'gauge-ts';
 import testControllerHolder from './test_controller_holder';
 
-var Selector = require('testcafe').Selector;
 var _;
 
 export default class GoogleStep {
@@ -24,7 +24,7 @@ export default class GoogleStep {
   }
 
   @Step("First link is <text>")
-  public async function(text: string) {
+  public async linkAssertion(text: string) {
     var firstLink = Selector('#rso').find('a').with({ boundTestRun: _ });
     await _.expect(firstLink.innerText).contains(text);
   };

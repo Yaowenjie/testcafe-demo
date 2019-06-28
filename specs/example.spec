@@ -32,8 +32,16 @@ To execute this specification, run
 //     |GoCD  |1          |
 //     |Rhythm|0          |
 
+## Go to devexpress
+
+* Goto devexpress page
+* Type in developer name: "John Smith", and submit
+* Article header should be "Thank you, John Smith!"
+
+
 ## Go to google
 
 * Goto Google's search page
 * Search for "github TestCafe"
 * First link is "GitHub - DevExpress/testcafe:"
+

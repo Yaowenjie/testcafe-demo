@@ -36,14 +36,14 @@ function runTest() {
 export default class StepImpl {
   @BeforeSpec()
   public async setup() {
-    console.log("setup needs to done before running the Scenario");
+    console.log("setup needs to done before running the Spec");
     createTestFile();
     runTest();
   }
 
   @AfterSpec()
   public async cleanUp() {
-    console.log("clean up needs to done after running the Scenario");
+    console.log("clean up needs to done after running the Spec");
     testControllerHolder.free();
     fs.unlinkSync('test.ts');
   }
