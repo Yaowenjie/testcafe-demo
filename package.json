@@ -16,7 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "gauge-ts": "latest",
-    "testcafe": "^1.2.1",
+    "testcafe": "^1.20.1",
     "testcafe-reporter-html-testrail": "^2.0.8",
     "ts-node": "latest",
     "typescript": "latest"
